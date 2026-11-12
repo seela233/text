@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN - Fashion World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p1-body">
+
+    <!-- الشريط العلوي المطابق للصورة الأولى -->
+    <header class="p1-navbar">
+        <div class="p1-brand-box">
+            <div class="p1-bag-logo"><i class="fa-solid fa-bag-shopping"></i><span>S</span></div>
+            <span class="p1-brand-text">SHEIN</span>
+            <span class="p1-divider">|</span>
+            <span class="p1-fashion-text">Fashion World ♡</span>
+        </div>
+        <nav class="p1-nav-menu">
+            <a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#"><i class="fa-solid fa-tag"></i> Shop</a>
+            <a href="#"><i class="fa-regular fa-heart"></i> Favorites</a>
+            <a href="#"><i class="fa-solid fa-headphones"></i> Support</a>
+            <a href="#"><i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="p1-main-grid">
+        
+        <!-- القسم الأيسر: الديكور والمنصة والحقيبة والورود -->
+        <div class="p1-left-scene">
+            <!-- الأيقونات العائمة الزجاجية -->
+            <div class="p1-float-icon fi-1"><i class="fa-solid fa-shirt"></i></div>
+            <div class="p1-float-icon fi-2"><i class="fa-solid fa-percent"></i></div>
+            <div class="p1-float-icon fi-3"><i class="fa-regular fa-gem"></i></div>
+            <div class="p1-float-icon fi-4"><i class="fa-solid fa-gift"></i></div>
+
+            <!-- منصة العرض المضيئة -->
+            <div class="p1-podium-wrap">
+                <div class="p1-neon-ellipse"></div>
+                <div class="p1-crown-top"><i class="fa-solid fa-crown"></i></div>
+                <div class="p1-black-bag">
+                    <div class="p1-purple-ribbon-bow">🎀</div>
+                    <h2>S</h2>
+                    <p>SHEIN</p>
+                </div>
+                <div class="p1-white-bag">
+                    <span>SHEIN</span>
+                </div>
+                <div class="p1-rose-group">💐</div>
+                <div class="p1-purple-heart">💜</div>
+                <div class="p1-podium-base"></div>
+            </div>
+
+            <!-- نصوص الترحيب الجانبية -->
+            <div class="p1-welcome-side-text">
+                <h1>Welcome Back! ♡</h1>
+                <p>Step into a world of fashion and style with SHEIN ♡</p>
+                <button type="button" class="p1-explore-btn">Explore More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- القسم الأيمن: بطاقة تسجيل الدخول الزجاجية الحقيقية -->
+        <div class="p1-right-card">
+            <!-- البطاقة المعلقة في الزاوية العلوية اليمنى -->
+            <div class="p1-hanging-price-tag">
+                <div class="p1-tag-hole"></div>
+                <strong>SHEIN</strong>
+                <span>♡</span>
+            </div>
+
+            <!-- الشعار العلوي المتوج -->
+            <div class="p1-card-header-logo">
+                <i class="fa-solid fa-crown p1-c-icon"></i>
+                <div class="p1-s-circle">S</div>
+                <span class="p1-spark s-1">✦</span>
+                <span class="p1-spark s-2">✦</span>
+                <span class="p1-spark s-3">✦</span>
+            </div>
+
+            <h2 class="p1-form-title">Login to Your Account</h2>
+            <p class="p1-form-sub">Continue your fashion journey ♡</p>
+
+            <form id="sheinLoginForm" class="p1-form">
+                <div class="p1-input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="inpName" placeholder="الاسم الكامل" required>
+                </div>
+
+                <div class="p1-row-inputs">
+                    <div class="p1-input-group">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <input type="number" id="inpAge" placeholder="العمر" min="12" max="99" required>
+                    </div>
+                    <div class="p1-input-group">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <input type="text" id="inpJob" placeholder="المهنة" required>
+                    </div>
+                </div>
+
+                <div class="p1-input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="text" id="inpEmail" placeholder="Email or Phone Number" required>
+                </div>
+
+                <div class="p1-input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="inpPass" placeholder="Password" required>
+                    <i class="fa-regular fa-eye-slash p1-eye" id="togglePass"></i>
+                </div>
+
+                <div class="p1-options-row">
+                    <label><input type="checkbox" checked> Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="p1-submit-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
+            </form>
+
+            <div class="p1-or-divider"><span>or</span></div>
+
+            <div class="p1-social-row">
+                <button type="button" class="p1-s-btn"><i class="fa-brands fa-google" style="color:#DB4437;"></i></button>
+                <button type="button" class="p1-s-btn"><i class="fa-brands fa-apple" style="color:#000;"></i></button>
+                <button type="button" class="p1-s-btn"><i class="fa-brands fa-facebook-f" style="color:#4267B2;"></i></button>
+                <button type="button" class="p1-s-btn"><i class="fa-brands fa-x-twitter" style="color:#000;"></i></button>
+            </div>
+
+            <p class="p1-signup-prompt">Don’t have an account? <a href="#">Sign Up ></a></p>
+        </div>
+    </main>
+
+    <!-- الفوتر السفلي -->
+    <footer class="p1-footer">
+        <div><i class="fa-solid fa-shield-halved"></i> Secure & Trusted &nbsp;|&nbsp; Your Style, Our Priority ♡</div>
+        <div class="p1-dots">
+            <span class="active"></span><span></span><span></span><span></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

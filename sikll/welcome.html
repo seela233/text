@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN - Welcome Back</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p2-body">
+
+    <!-- القائمة الجانبية البنفسجية الداكنة -->
+    <aside class="p2-sidebar">
+        <div class="p2-side-brand">
+            <div class="p2-bag-logo"><i class="fa-solid fa-bag-shopping"></i><span>S</span></div>
+            <h2>SHEIN</h2>
+            <p>Fashion World ♡</p>
+        </div>
+
+        <ul class="p2-menu">
+            <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> Shop</a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i> Favorites</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> My Orders</a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i> My Account</a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            <li><a href="#" id="logoutLink"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+
+        <div class="p2-side-footer">
+            <p>Thank you<br>for being with us ♡</p>
+            <div class="p2-small-bow">🎀</div>
+        </div>
+    </aside>
+
+    <!-- لوحة المحتوى للترحيب بالبيانات -->
+    <div class="p2-main-content">
+        <!-- شريط البحث العلوي -->
+        <header class="p2-top-bar">
+            <div class="p2-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for your favorite items...">
+            </div>
+            <div class="p2-user-area">
+                <div class="p2-bell">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="p2-red-dot">1</span>
+                </div>
+                <div class="p2-user-pill">
+                    <div class="p2-avatar-sm"><i class="fa-solid fa-user"></i></div>
+                    <span id="topUserName">المستخدم</span>
+                    <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- بطاقة الترحيب المركزية -->
+        <section class="p2-center-box">
+            <div class="p2-card-frame">
+                <!-- البطاقة المعلقة -->
+                <div class="p2-hanging-tag">
+                    <div class="p2-ribbon">🎀</div>
+                    <strong>SHEIN</strong>
+                    <span>♡</span>
+                </div>
+
+                <span class="p2-welcome-script">Welcome ♡</span>
+
+                <!-- علامة الصح المتوجة -->
+                <div class="p2-crown-check-wrap">
+                    <i class="fa-solid fa-crown p2-gold-crown"></i>
+                    <div class="p2-check-circle"><i class="fa-solid fa-check"></i></div>
+                </div>
+
+                <h1 class="p2-main-title">♡ مرحباً بكِ مجدداً!</h1>
+                <p class="p2-sub-title">كلنا سعداء بعودتك الى عالم الموضة مع SHEIN ♡</p>
+
+                <!-- شريط البيانات الأفقي مع صورتك photo.png -->
+                <div class="p2-data-strip">
+                    <!-- صورتك الشخصية المتوجة -->
+                    <div class="p2-avatar-col">
+                        <div class="p2-crowned-avatar">
+                            <i class="fa-solid fa-crown"></i>
+                            <img src="photo.png" alt="User" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                            <span>💜</span>
+                        </div>
+                    </div>
+
+                    <!-- الحقل الأول: الاسم -->
+                    <div class="p2-info-box">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="p2-lbl">الاسم</span>
+                        <strong class="p2-val" id="resName">--</strong>
+                    </div>
+
+                    <!-- الحقل الثاني: العمر -->
+                    <div class="p2-info-box">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <span class="p2-lbl">العمر</span>
+                        <strong class="p2-val" id="resAge">--</strong>
+                    </div>
+
+                    <!-- الحقل الثالث: البريد الإلكتروني -->
+                    <div class="p2-info-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="p2-lbl">البريد الإلكتروني</span>
+                        <strong class="p2-val" id="resEmail">--</strong>
+                    </div>
+
+                    <!-- الحقل الرابع: المهنة -->
+                    <div class="p2-info-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span class="p2-lbl">المهنة</span>
+                        <strong class="p2-val" id="resJob">--</strong>
+                    </div>
+                </div>
+
+                <!-- شريط الهدايا الترحيبية -->
+                <div class="p2-gift-strip">
+                    <span class="p2-gift-icon">🎁</span>
+                    <p>نتمنى لك تجربة تسوق ممتعة ومليئة بالموضة والجمال ♡</p>
+                </div>
+
+                <!-- زر ابدئي التسوق الآن -->
+                <button class="p2-shop-btn">
+                    ابدئي التسوق الآن <i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- عناصر الزخرفة الجانبية في البطاقة -->
+                <div class="p2-corner-roses">💐</div>
+                <div class="p2-corner-heart">💜</div>
+                <div class="p2-corner-bag">🛍️<span>SHEIN</span></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
